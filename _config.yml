@@ -1,0 +1,8 @@
+# Site Settings
+baseurl: ""
+url : "https://naye0ng.github.io"
+
+# Theme Settings
+theme-settings :
+  title : Grape Theme
+  
