@@ -5,4 +5,25 @@ url : "https://naye0ng.github.io"
 # Theme Settings
 theme-settings :
   title : Grape Theme
-  
+
+  # Profile Settings
+  profile :
+    image : assets/img/grape.png
+    username : NAYEONG
+    description : Hi, I'm NAYEONG! creator of Grape-Theme! Grape-Theme is my first jekyll theme and great for blogs and easy to customize.
+
+# Icons
+  icons :
+    email_address: # Full email address, e.g. "sample@google.com"
+    linkedin:  # Full URL 
+    github: "naye0ng"
+    gitlab:
+    bitbucket:
+    stack_exchange:  # Full URL
+    wordpress:
+    google_plus:
+    twitter:
+    youtube:
+    facebook:
+    instagram:
+

@@ -35,4 +35,18 @@ ol, ul {
 }
 a:link, a:visited, a:active, a:hover {text-decoration: none; color: $text-color;}
 
-
+.tag {
+	background-color: $theme-color-d;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 1px 15px 0px;
+    border-radius: 20px;
+    color: #fff;
+	font-weight: 600;
+	font-size: 0.85rem;
+	line-height: 35px;
+	letter-spacing: 0.05rem;
+}
+.tag:hover {
+	background-color: $theme-color-d2;
+}
