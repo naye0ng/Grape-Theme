@@ -27,18 +27,19 @@ footer, header, hgroup, menu, nav, section, main {
 }
 html, body {
 	font-family: 'Jeju Gothic', sans-serif;
-	color:#333;
+	color: $text;
     height: 100%;}
 
 ol, ul {
 	list-style: none;
 }
-a:link, a:visited, a:active, a:hover {text-decoration: none; color: $text-color;}
+a:link, a:visited, a:active, a:hover {text-decoration: none; color: $text;}
 
 .tag {
-	background-color: $theme-color-d;
+	background-color: $theme-dark;
 	display: inline-block;
 	margin-bottom: 10px;
+	margin-right : 3px;
 	padding: 1px 15px 0px;
     border-radius: 20px;
     color: #fff;
@@ -48,5 +49,5 @@ a:link, a:visited, a:active, a:hover {text-decoration: none; color: $text-color;
 	letter-spacing: 0.05rem;
 }
 .tag:hover {
-	background-color: $theme-color-d2;
+	background-color: $theme-dark2;
 }

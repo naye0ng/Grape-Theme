@@ -3,6 +3,25 @@
     #profile, #tag-wrap {
         margin-bottom: 30px;
     }
+    #icons{
+        li { 
+            display: inline-block; 
+        }
+        i{
+            width: 40px;
+            height: 40px;
+            background-color: $theme-bright;
+            color : #fff;
+            border-radius: 50%;
+            font-size : 1.3rem;
+            line-height: 42px;
+            margin-right : 10px;
+        }
+        i:hover {
+            background-color: $theme-dark;
+            color : #fff;
+        }
+    }
     .img-wrap{
         display: inline-block;
         overflow: hidden;
