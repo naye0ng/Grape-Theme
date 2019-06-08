@@ -1,6 +1,7 @@
 *{
 	-webkit-text-size-adjust:none;
 	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	box-sizing: border-box;
 }
 
 body{-webkit-user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
@@ -24,6 +25,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 	word-break: keep-all;
+	font-size: 1.05rem;
+    line-height: 1.5em;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,20 +49,29 @@ h3 {
 	font-size : 1.4rem;
 }
 h4 {
-	font-size : 1.2rem;
+	font-size : 1.3rem;
 }
 h5 {
-	font-size : 1rem;
+	font-size : 1.2rem;
 }
 h6 {
-	font-size : 0.8rem;
+	font-size : 1.05rem;
 }
 
 ol, ul {
 	list-style: none;
 }
-a:link, a:visited, a:active, a:hover {text-decoration: none; color: $text;}
-
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none; 
+	color: $text;
+}
+.highlighter-rouge {
+    font-size: 0.9rem;
+    color: $theme-color;
+    background-color: $theme-bright;
+    padding: .1em .5em;
+    border-radius: 3px;
+}
 .tag {
 	background-color: $theme-dark;
 	display: inline-block;

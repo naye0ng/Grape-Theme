@@ -10,7 +10,7 @@ theme-settings :
   profile :
     image : assets/img/smile.png
     username : NAYEONG KIM
-    description : Hi, I'm NAYEONG! creator of Grape-Theme! Grape-Theme is my first jekyll theme and great for blogs and easy to customize.
+    description : Hi, I'm <b>NAYEONG</b>! creator of Grape-Theme! <br><b>Grape-Theme</b> is my first jekyll theme and great for blogs and easy to customize.
 
 # Icons
   icons :

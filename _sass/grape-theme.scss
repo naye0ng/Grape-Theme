@@ -1,9 +1,12 @@
 // Base 
 @import 'base/variable';
 @import 'base/global';
+@import 'base/utility';
+@import 'base/highlight';
 
 // Layout 
 @import 'layouts/home';
+@import 'layouts/post';
 
 // Include 
 @import 'includes/nav';

@@ -1,6 +1,16 @@
 $theme-color : #8b51a3;
-$theme-bright : #b996c7;
+$theme-bright : #f7f4f9;
 $theme-dark : #563d7c;
 $theme-dark2 : #443063;
 $text : rgba(0,0,0,0.8);
 $text-gray : rgba(0,0,0,0.54);
+
+%post-padding {
+    padding : 0px 15%;
+    @media (max-width: 968px) {
+        padding: 0px 10%;
+    }
+    @media (max-width: 576px) {
+        padding: 0px;
+    }
+}
