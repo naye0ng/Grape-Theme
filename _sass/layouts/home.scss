@@ -7,10 +7,14 @@
             border-bottom: 1px solid rgba(0,0,0,0.1);
             padding: 15px 0px;
             .post-wrap{
-                margin : 25px 25px;
+                margin : 25px;
+                margin-left : 45px;
                 .text-warp {
                     display: inline-block;
-                    position: relative;
+                    .title {
+                        position: relative;
+                        line-height: 2rem;
+                    }
                     .title::before {
                         content: "";
                         position: absolute;
@@ -64,3 +68,33 @@
         }
     }
 }
+
+// Pagination 
+#pagination{
+    margin-top : 60px;
+    margin-bottom : 60px;
+    text-align: center;
+    li.btn-rounded{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border: 2px solid rgba(0,0,0,0.07);
+        border-radius: 50%;
+        color: rgba(0,0,0,0.54);
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    li.prev, li.next {
+        background-color: rgba(0,0,0,0.07);
+        border: 2px solid rgba(0,0,0,0.0);
+    }
+
+    li.btn-rounded:hover{
+        background-color: $theme-dark;
+        border: 2px solid $theme-dark;
+        color : #fff;
+        //line-height: 33px;
+    }
+} 

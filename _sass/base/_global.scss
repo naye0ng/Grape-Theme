@@ -23,6 +23,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	word-break: keep-all;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,18 +33,17 @@ footer, header, hgroup, menu, nav, section, main {
 html, body {
 	color: $text;
     height: 100%;}
-
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
+}
 h1 {
 	font-size : 1.8rem;
-	font-weight: 600;
 }
 h2 {
 	font-size : 1.6rem;
-	font-weight: 600;
 }
 h3 {
 	font-size : 1.4rem;
-	font-weight: 600;
 }
 h4 {
 	font-size : 1.2rem;

@@ -8,22 +8,31 @@ theme-settings :
 
   # Profile Settings
   profile :
-    image : assets/img/grape.png
-    username : NAYEONG
+    image : assets/img/smile.png
+    username : NAYEONG KIM
     description : Hi, I'm NAYEONG! creator of Grape-Theme! Grape-Theme is my first jekyll theme and great for blogs and easy to customize.
 
 # Icons
   icons :
-    email_address: # Full email address, e.g. "sample@google.com"
+    email: # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
     github: "naye0ng"
-    gitlab:
-    bitbucket:
-    stack_exchange:  # Full URL
-    wordpress:
+    gitlab: "naye0ng"
+    bitbucket: "naye0ng"
     google_plus:
     twitter:
     youtube:
     facebook:
-    instagram:
+    instagram: "nayeong_ee"
 
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Build Ssttings
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate, jekyll-bootstrap-sass]
+bootstrap:
+  assets: true
