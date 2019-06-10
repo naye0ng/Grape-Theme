@@ -65,6 +65,12 @@ a:link, a:visited, a:active, a:hover {
 	text-decoration: none; 
 	color: $text;
 }
+
+
+.container{
+	padding-top : 30px;
+	padding-bottom: 60px;
+}
 .highlighter-rouge {
     font-size: 0.9rem;
     color: $theme-color;

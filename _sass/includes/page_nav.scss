@@ -1,0 +1,106 @@
+#page-nav{
+    .btn-multi {
+        position: fixed;
+        @extend %page-nav-btn;
+        bottom : 60px;
+    }
+    .btn {
+        display: inline-flex;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        white-space: nowrap;
+        padding: 8px 20px;
+        font-size: 14px;
+        background-color: $theme-color;
+        border-radius: 2px;
+        color: #fff;
+        text-transform: uppercase;
+        border: none;
+        transition: all 0.2s ease-in;
+        background-position: 50%;
+        outline: none !important;
+    }
+    .btn.btn-circle {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 0 !important;
+        font-size: 18px;
+    }
+    .btn-multi input {
+        display: none;
+    }
+    .btn-multi input:not(:checked) ~ label {
+        transform: rotate(0);
+    }
+    .btn-multi input:not(:checked) ~ label .btn {
+        border-radius: 0;
+        height: 30px;
+        width: 30px;
+        box-shadow: none;
+    }
+    .btn-multi input:not(:checked) ~ label .btn:first-child {
+        border-top-left-radius: 100%;
+        transform: translate(25px, 25px);
+    }
+    .btn-multi input:not(:checked) ~ label .btn:nth-child(2) {
+        border-top-right-radius: 100%;
+        transform: translate(55px, 25px);
+    }
+    .btn-multi input:not(:checked) ~ label .btn:nth-child(3) {
+        border-bottom-left-radius: 100%;
+        transform: translate(25px, 55px);
+    }
+    .btn-multi input:not(:checked) ~ label .btn:nth-child(4) {
+        border-bottom-right-radius: 100%;
+        transform: translate(55px, 55px);
+    }
+    .btn-multi input:not(:checked) ~ label .btn .icon {
+        opacity: 0;
+    }
+    .btn-multi input:not(:checked) ~ label > .icon {
+        opacity: 1;
+    }
+    .btn-multi label {
+        position: relative;
+        height: 110px;
+        width: 110px;
+        display: block;
+        transform: rotate(45deg);
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+    }
+    .btn-multi label .btn {
+        position: absolute;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    .btn-multi label .btn:nth-child(2) {
+        transform: translate(60px, 0);
+    }
+    .btn-multi label .btn:nth-child(3) {
+        transform: translate(0, 60px);
+    }
+    .btn-multi label .btn:nth-child(4) {
+        transform: translate(60px, 60px);
+    }
+    .btn-multi label .btn:not(:nth-child(4)) .icon {
+        transform: rotate(-45deg);
+    }
+    .btn-multi label .btn .icon {
+        opacity: 1;
+        transition: all 0.15s ease-in-out;
+    }
+    .btn-multi label > .icon {
+        color: white;
+        position: absolute;
+        font-size: 30px;
+        left: calc(39%);
+        top: calc(36%);
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+    }
+}

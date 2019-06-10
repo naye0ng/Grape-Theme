@@ -14,3 +14,10 @@ $text-gray : rgba(0,0,0,0.54);
         padding: 0px;
     }
 }
+
+%page-nav-btn {
+    right : 5%;
+    @media (max-width: 968px) {
+        right : 3%;
+    }
+}
