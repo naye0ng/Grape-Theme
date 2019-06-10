@@ -13,3 +13,10 @@ layout: page
         {{ content }}
     </section>
 </div>
+
+<!-- Disqus -->
+{% if site.theme_settings.disqus_shortname %}
+<div id="comments">
+  {% include disqus.html %}
+</div>
+{% endif %}

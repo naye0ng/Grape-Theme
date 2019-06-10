@@ -3,18 +3,19 @@ baseurl: ""
 url : "https://naye0ng.github.io"
 
 # Theme Settings
-theme-settings :
+theme_settings :
   title : Grape Theme
 
   # Profile Settings
   profile :
     image : assets/img/smile.png
     username : NAYEONG KIM
-    description : Hi, I'm <b>NAYEONG</b>! creator of Grape-Theme! <br><b>Grape-Theme</b> is my first jekyll theme and great for blogs and easy to customize.
+    description : "Hi, I'm <b>NAYEONG</b>! 
+      creator of Grape-Theme! <br><b>Grape-Theme</b> is my first jekyll theme and you can customize this theme easily."
 
-# Icons
+  # Icons
   icons :
-    email: # Full email address, e.g. "sample@google.com"
+    email: "nayeong_e@naver.com"# Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
     github: "naye0ng"
     gitlab: "naye0ng"
@@ -24,6 +25,8 @@ theme-settings :
     youtube:
     facebook:
     instagram: "nayeong_ee"
+
+  disqus_shortname :
 
 # Pagination
 paginate: 5
