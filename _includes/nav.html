@@ -2,7 +2,7 @@
 <div id="profile">
     {% assign profile = site.theme-settings.profile %}
     <div class="img-wrap">
-        <img src="{{ profile.image }}" alt="profile-image">
+        <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
     </div>
     <p class="username">{{ profile.username }}</p>
     <p class="description">{{ profile.description }}</p>
@@ -16,6 +16,8 @@
 <div id="tag-wrap">
     <p class="title">TAGS</p>
     {% for tag in site.tags %}
-        <sapn class="tag">{{ tag | first }}</sapn>
+        <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
+            <sapn class="tag">{{ tag | first }}</sapn>
+        </a>
     {% endfor %}
 </div>

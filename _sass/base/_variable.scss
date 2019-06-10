@@ -5,7 +5,7 @@ $theme-dark2 : #443063;
 $text : rgba(0,0,0,0.8);
 $text-gray : rgba(0,0,0,0.54);
 
-%post-padding {
+%page-padding {
     padding : 0px 15%;
     @media (max-width: 968px) {
         padding: 0px 10%;
