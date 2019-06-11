@@ -1,0 +1,44 @@
+- project :
+  - project_url :
+    date : 2019.06.06
+    image : koreaSunset.jpg
+    title : "Grape-Theme : A awesome jekyll theme"
+    subtitle : this project is my first jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.
+
+- project :
+  - project_url :
+    date : 2019.06.09
+    image : 
+    title : Grape-Theme
+    subtitle : A awesome jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.
+
+- project :
+  - project_url :
+    date : 2019.06.09
+    image : 
+    title : Grape-Theme
+    subtitle : A awesome jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.
+
+- project :
+  - project_url :
+    date : 2019.06.09
+    image : 
+    title : Grape-Theme
+    subtitle : A awesome jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.
+
+- project :
+  - project_url :
+    date : 2019.06.09
+    image : 
+    title : Grape-Theme
+    subtitle : A awesome jekyll theme
+    skills : [HTML, CSS, JAVASCRIPT, ]
+    description : this project is my first jekyll theme. and everyone can customize this easily.
