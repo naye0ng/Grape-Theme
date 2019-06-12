@@ -7,7 +7,7 @@ author: Nayeong Kim
 comments : True
 ---
 
-This is an example of a post include code, quotes and backtick.
+This is an example of a post which includes code, quotes and backtick.
 
 you can easy to change style in `_utility.html`.
 

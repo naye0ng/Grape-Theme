@@ -15,10 +15,10 @@ layout: default
                     <div class="text-warp">
                         <h3 class="title">{{ post.title }}</h3>
                         <p class="excerpt">
-                        {% if post.excerpt.size > 80 %}
-                            {{ post.excerpt | strip_html | strip_newlines | truncatewords: 35, '...' }}
+                        {% if post.excerpt.size > 50 %}
+                            {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30, '...' }}
                         {% else %}
-                            {{ post.excerpt | strip_html | strip_newlines }}
+                            {{ post.subtitle }}
                         {% endif %}
                         </p>
                         <div>
