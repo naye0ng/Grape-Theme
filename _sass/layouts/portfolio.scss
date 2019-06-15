@@ -1,0 +1,68 @@
+#portfolio{
+    position:relative;
+    height: 100%;
+    @extend %page-padding;
+    .profile{
+        margin-bottom: 30px;
+        text-align: left;
+        color:#fff;
+        @media (max-width:767px) {
+            text-align: center;
+            padding: 0 15%;
+        }
+        .img-wrap{
+            margin-bottom: 15px;
+            text-align: center;
+            .img{
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                width: 180px;
+                height: 180px;
+                border-radius: 15px;
+                background-color: #ddd;
+                img{
+                    width:100%;
+                }
+            }
+            .img::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.03);
+            }
+        }
+        .text-wrap{
+            padding-bottom: 25px;
+            .description{
+                margin: 10px 0;
+                font-size: 0.95rem;
+            }
+        }
+    }
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 140%;
+        top: -25px;
+        left:-20%;
+        height: 100%;
+        background-color: $theme-dark;
+    }
+    #icons i{
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+        line-height: 35px;
+        color:$theme-dark;
+        background-color: #fff;
+    }
+    #icons i:hover{
+        background-color: $theme-dark2;
+        color:#fff;
+    }
+}

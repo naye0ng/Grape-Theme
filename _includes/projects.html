@@ -1,0 +1,35 @@
+<div id="projects">
+    <h1 class="title">Projects  🙋🏻</h1>
+    <div class="project-wrap">
+    {% for _ in site.data.projects %}
+        {% assign project = _.project[0] %}
+        <a href="{{ project.url }}">
+            <div class="proj-card">
+                {% if project.image %}
+                <div class="img-wrap"> 
+                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+                </div>
+                {% endif %}
+                <div class="text-wrap {% if project.image %}{% endif %}">
+                    <div class="title-wrap">
+                        <div class="title">{{ project.title }}</div>
+                        {% if project.subtitle %}
+                        <div class="subtitle">: {{ project.subtitle }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="meta">
+                            {{ project.date }}
+                            {% if project.skills %}
+                            &middot;
+                                {% for skill in project.skills %}
+                                <span>#{{ skill }}</span>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                    <div class="description">{{ project.description }}</div>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+    </div>
+</div>
