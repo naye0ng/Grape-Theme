@@ -18,11 +18,10 @@
     .post-content{
         overflow: hidden;
         margin-bottom: 100px;
-        
-        // margin : 60px 0;
     }
 }
 #comments{
+    @extend %page-padding;
     border-top: 1px solid rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }

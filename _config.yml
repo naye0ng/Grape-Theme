@@ -9,23 +9,24 @@ theme_settings :
   # Profile Settings
   profile :
     image : assets/img/smile.png
-    username : NAYEONG KIM
-    description : "Hi, I'm <b>NAYEONG</b>! 
-      creator of Grape-Theme! <br><b>Grape-Theme</b> is my first jekyll theme and you can customize this theme easily."
+    username : Nayeong Kim
+    description : "Hi, I'm Nayeong! 
+      creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily."
 
   # Icons
   icons :
-    email: "nayeong_e@naver.com"# Full email address, e.g. "sample@google.com"
+    email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: "naye0ng"
-    gitlab: "naye0ng"
-    bitbucket: "naye0ng"
+    github: naye0ng
+    gitlab: 
+    bitbucket: 
     google_plus:
     twitter:
     youtube:
     facebook:
-    instagram: "nayeong_ee"
+    instagram:
 
+  # Disqus
   disqus_shortname :
 
 # Pagination
