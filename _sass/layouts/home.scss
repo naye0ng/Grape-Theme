@@ -1,6 +1,34 @@
 #home {
-    padding : 0px 2%;
+    #aside{
+        display:block;
+        @media (max-width: 991px) {
+           display: none;
+        }
+    }
+    #header-nav, #header-content{
+        display:none;
+        @media (max-width: 991px) {
+           display: block;
+        }
+    }
+    #header-content{
+        @extend %page-padding;
+        position: relative;
+        margin-bottom: 30px;
+        color: #fff;
+        .bg{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 140%;
+            top: -60%;
+            left:-20%;
+            height :220%;
+            background-color: $theme-dark;
+        }
+    }
     #posts {
+        @extend %posts-padding;
         .post{
             width: 100%;
             overflow: hidden;

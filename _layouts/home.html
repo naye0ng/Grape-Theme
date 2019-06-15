@@ -1,11 +1,19 @@
 ---
 layout: default
 ---
-<div id="home" class="row">
-    <!--  navigation  -->
-    <nav id="navbar" class="col-md-4"> 
-    {% include nav.html %}
-    </nav>
+<div id="home">
+    <!-- Aside Navigation  -->
+    <aside id="aside" class="col-md-4"> 
+    {% include aside.html %}
+    </aside>
+    <!-- Responsive Header -->
+    <section id="header-nav">
+        {% include header.html %}
+    </section>
+    <section id="header-content">
+        <h1>{{ site.theme_settings.title }}</h1>
+        <div class="bg"></div>
+    </section>
     <!-- Post List -->
     <section id="posts" class="col-12 col-md-8">
     {% for post in paginator.posts %}
@@ -16,7 +24,7 @@ layout: default
                         <h3 class="title">{{ post.title }}</h3>
                         <p class="excerpt">
                         {% if post.excerpt.size > 50 %}
-                            {{ post.excerpt | strip_html | strip_newlines | truncatewords: 30, '...' }}
+                            {{ post.excerpt | strip_html | strip_newlines | truncatewords: 25, '...' }}
                         {% else %}
                             {{ post.subtitle }}
                         {% endif %}
