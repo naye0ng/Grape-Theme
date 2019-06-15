@@ -1,9 +1,11 @@
 <!-- User Profile -->
 <div id="profile">
     {% assign profile = site.theme_settings.profile %}
-    <div class="img-wrap">
-        <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
-    </div>
+    <a href="{{ site.baseurl }}/portfolio">
+        <div class="img-wrap">
+            <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
+        </div>
+    </a>
     <p class="username">{{ profile.username }}</p>
     <p class="description">{{ profile.description }}</p>
 
@@ -25,19 +27,18 @@
 </div>
 <!-- Project -->
 <div id="proj-wrap">
-    <a href="{{ site.url }}/projects">
+    <a href="{{ site.url }}/portfolio/#projects">
         <p class="title">PROJECTS 🙋🏻 </p>
-    
         <hr class="proj-hr">
         {% for _ in site.data.projects %}
         {% assign project = _.project[0] %}
-        <!-- {% if project.print %} -->
+        {% if project.print %}
         <div class="proj-content">
             <div class="proj-title">{{ project.title }}</div>
             <div class="meta">{{ project.date }}</div>
         </div>
         <hr class="proj-hr">
-        <!-- {% endif %} -->
+        {% endif %}
         {% endfor %}
     </a>
 </div>

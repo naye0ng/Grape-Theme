@@ -65,8 +65,6 @@ a:link, a:visited, a:active, a:hover {
 	text-decoration: none; 
 	color: $text;
 }
-
-
 .container{
 	padding-top : 30px;
 	padding-bottom: 60px;
@@ -93,4 +91,25 @@ a:link, a:visited, a:active, a:hover {
 }
 .tag:hover {
 	background-color: $theme-dark2;
+}
+#icons{
+	margin-top: 25px;
+	li { 
+		display: inline-block; 
+	}
+	i{
+		width: 40px;
+		height: 40px;
+		background-color: rgba(0,0,0,0.07);
+		color : rgba(0,0,0,0.7);
+		border-radius: 50%;
+		font-size : 1.3rem;
+		line-height: 42px;
+		margin-right : 10px;
+		text-align: center;
+	}
+	i:hover {
+		background-color: $theme-dark;
+		color : #fff;
+	}
 }

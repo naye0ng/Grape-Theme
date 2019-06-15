@@ -9,26 +9,6 @@
         letter-spacing: -0.05rem;
         font-size: 1rem;
     }
-    #icons{
-        margin-top: 25px;
-        li { 
-            display: inline-block; 
-        }
-        i{
-            width: 40px;
-            height: 40px;
-            background-color: rgba(0,0,0,0.07);
-            color : rgba(0,0,0,0.7);
-            border-radius: 50%;
-            font-size : 1.3rem;
-            line-height: 42px;
-            margin-right : 10px;
-        }
-        i:hover {
-            background-color: $theme-dark;
-            color : #fff;
-        }
-    }
     .img-wrap{
         display: inline-block;
         position: relative;
@@ -51,6 +31,9 @@
         right : 0;
         bottom: 0;
         background: rgba(0,0,0,0.03);
+    }
+    .img-wrap:hover::before{
+        background: rgba(139,81,163,0.03);
     }
     .title, .username  {
         font-size : 1.1rem;
