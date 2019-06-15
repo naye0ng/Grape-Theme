@@ -12,8 +12,8 @@ layout: default
     </section>
     <section id="header-content">
         <h1>{{ site.theme_settings.title }}</h1>
-        <div class="bg"></div>
     </section>
+    <section class="bg"></section>
     <!-- Post List -->
     <section id="posts" class="col-12 col-md-8">
     {% for post in paginator.posts %}
@@ -55,22 +55,31 @@ layout: default
         {% if paginator.total_pages > 1 %}
         <div id="pagination">
             <ul>
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}">
+            {% assign q = paginator.page | divided_by: 5 %}
+            {% assign min = q | times: 5  %}
+            {% assign max = q | plus: 1 | times: 5 | minus: 1 %}
+            {% if min == 0 %}
+                {% assign min = 1 %}
+            {% endif %}
+            {% if max > paginator.total_pages %}
+                {% assign max = paginator.total_pages %}
+            {% endif %}
+                {% if min != 1 %}
+                <a href="/blog/page{{ min | minus: 1 }}">
                     <li class="btn-rounded prev">
-                        <i class="fa fa-chevron-left"></i>
+                            <i class="fas fa-angle-double-left"></i>
                     </li>
                 </a>
                 {% endif %}
-                {% for page in (1..paginator.total_pages) %}
+                {% for page in (min..max) %}
                 <a href="{% if page == 1 %}/{% else %}/blog/page{{ page }}{% endif %}" class="{% if page == paginator.page %}selected{% endif %}">
                     <li class="btn-rounded">{{ page }}</li>
                 </a>
                 {% endfor %}
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}">
+                {% if max != paginator.total_pages %}
+                <a href="/blog/page{{ max | plus: 1 }}">
                     <li class="btn-rounded next">
-                        <i class="fa fa-chevron-right"></i>
+                        <i class="fas fa-angle-double-right"></i>
                     </li>   
                 </a>
                 {% endif %}

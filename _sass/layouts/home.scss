@@ -5,7 +5,7 @@
            display: none;
         }
     }
-    #header-nav, #header-content{
+    #header-nav, #header-content, .bg{
         display:none;
         @media (max-width: 991px) {
            display: block;
@@ -13,19 +13,19 @@
     }
     #header-content{
         @extend %page-padding;
-        position: relative;
+        // position: relative;
         margin-bottom: 30px;
         color: #fff;
-        .bg{
-            content: "";
-            position: absolute;
-            z-index: -1;
-            width: 140%;
-            top: -60%;
-            left:-20%;
-            height :220%;
-            background-color: $theme-dark;
-        }
+    }
+    .bg{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 105px;
+        left:0%;
+        height: 95px;
+        background-color: $theme-dark;
     }
     #posts {
         @extend %posts-padding;
@@ -112,7 +112,7 @@
         color: rgba(0,0,0,0.54);
         font-size: 0.8rem;
         font-weight: 600;
-        line-height: 32px;
+        line-height: 30px;
     }
     li.prev, li.next {
         background-color: rgba(0,0,0,0.07);
@@ -123,6 +123,10 @@
         background-color: $theme-dark;
         border: 2px solid $theme-dark;
         color : #fff;
-        //line-height: 33px;
+    }
+    .selected li{
+        background-color: $theme-dark;
+        border: 2px solid $theme-dark;
+        color : #fff;
     }
 } 
