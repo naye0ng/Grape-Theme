@@ -13,7 +13,6 @@
     }
     #header-content{
         @extend %page-padding;
-        // position: relative;
         margin-bottom: 30px;
         color: #fff;
     }
@@ -26,6 +25,11 @@
         left:0%;
         height: 95px;
         background-color: $theme-dark;
+    }
+    #posts.col-md-8{
+        @media (max-width: 991px) {
+            min-width:100%;
+         }
     }
     #posts {
         @extend %posts-padding;

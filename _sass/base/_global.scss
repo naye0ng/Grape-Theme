@@ -68,6 +68,9 @@ a:link, a:visited, a:active, a:hover {
 .container{
 	padding-top : 30px;
 	padding-bottom: 30px;
+	@media (min-width: 576px){
+		min-width: 600px;
+	}
 }
 .highlighter-rouge {
     font-size: 0.9rem;
