@@ -17,7 +17,9 @@ layout: page
 <!-- Disqus -->
 {% if site.theme_settings.disqus_shortname %}
 <div id="comments">
-  {% include disqus.html %}
+    <div class="border">
+    {% include disqus.html %}
+    </div>
 </div>
 {% endif %}
 

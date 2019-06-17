@@ -5,6 +5,7 @@ url : "https://naye0ng.github.io"
 # Theme Settings
 theme_settings :
   title : Grape Theme
+  favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
