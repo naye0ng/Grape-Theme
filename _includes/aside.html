@@ -31,7 +31,7 @@
         <p class="title">PROJECTS 🙋🏻 </p>
         <hr class="proj-hr">
         {% for _ in site.data.projects %}
-        {% assign project = _.project[0] %}
+        {% assign project = _.project %}
         {% if project.print %}
         <div class="proj-content">
             <div class="proj-title">{{ project.title }}</div>
