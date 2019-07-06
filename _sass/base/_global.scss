@@ -22,7 +22,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	vertical-align: baseline;
 	word-break: keep-all;
 	font-size: 1.05rem;
@@ -35,7 +34,8 @@ footer, header, hgroup, menu, nav, section, main {
 }
 html, body {
 	color: $text;
-    height: 100%;}
+	height: 100%;
+}
 h1, h2, h3, h4, h5, h6{
 	font-weight: 600;
 }
@@ -94,11 +94,11 @@ a:link, a:visited, a:active, a:hover {
 	color: $text;
 }
 .container{
-	padding-top : 30px;
+	padding-top: 30px;
 	padding-bottom: 30px;
-	@media (min-width: 576px){
-		min-width: 600px;
-	}
+}
+.row{
+	margin : auto 0px;
 }
 .display-none{
 	display: none;

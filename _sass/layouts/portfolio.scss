@@ -1,68 +1,150 @@
-#portfolio{
-    position:relative;
-    height: 100%;
+#protfolio {
+  #about-me {
+    position: relative;
+    .row {
+      @extend %page-padding;
+    }
+    .img-wrap {
+      text-align: center;
+      .img {
+        overflow: hidden;
+        display: inline-block;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .text-wrap {
+      color: #fff;
+      .description {
+        margin: 10px 0;
+        font-size: 0.95rem;
+      }
+      @media (max-width: 767px) {
+        margin-top: 15px;
+        text-align: center;
+      }
+      #icons li {
+        i {
+          width: 35px;
+          height: 35px;
+          color: #fff;
+          background-color: $theme-dark;
+          line-height: 35px;
+        }
+        i:hover {
+          background-color: #fff;
+          color: $theme-dark;
+        }
+      }
+    }
+    .bg {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 110px);
+      top: -55px;
+      background-color: $theme-dark;   
+    }
+  }
+  #career {
     @extend %page-padding;
-    .profile{
-        margin-bottom: 30px;
-        text-align: left;
-        color:#fff;
-        @media (max-width:767px) {
-            text-align: center;
-            padding: 0 15%;
+    margin-bottom: 55px;
+    margin-top: 55px;
+    .title {
+      margin-top: 15px;
+      color: $theme-dark;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .exper {
+      padding-top: 35px;
+      ul.exper-list {
+        margin-top: 25px;
+        margin-left: 3%;
+        border-left: 5px solid $theme-color;
+        list-style-type: none;
+        li.meta {
+          position: relative;
+          padding: 15px 0 15px 30px;
+          p {
+            font-weight: 600;
+            line-height: 0.8rem;
+          }
+          .date {
+            font-size: 0.75rem;
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .description {
+            font-size: 1rem;
+          }
         }
-        .img-wrap{
-            margin-bottom: 15px;
-            text-align: center;
-            .img{
-                position: relative;
-                overflow: hidden;
-                display: inline-block;
-                width: 180px;
-                height: 180px;
-                border-radius: 15px;
-                background-color: #ddd;
-                img{
-                    width:100%;
-                }
-            }
-            .img::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0,0,0,0.03);
-            }
+        li.meta::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          top: 42%;
+          left: -10px;
+          background-color: $theme-color;
+          border-radius: 50%;
         }
-        .text-wrap{
-            padding-bottom: 25px;
-            .description{
-                margin: 10px 0;
-                font-size: 0.95rem;
-            }
+      }
+    }
+    .skills {
+      padding-top: 35px;
+      ul.skill-list {
+        margin-top: 20px;
+        margin-left: 3%;
+        list-style-type: none;
+        li.skill {
+          margin: 18px auto;
+          .name {
+            padding-left: 5px;
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+          .progress {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 18px;
+            background-color: rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            animation-name: progressAnimation;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            -webkit-animation-name: progressAnimation;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-timing-function: ease-in-out;
+          }
+          .progress-bar {
+            position: absolute;
+            height: 18px;
+            background-color: $theme-color;
+          }
+          .progress-value {
+            position: absolute;
+            right: 5px;
+            color: #ddd;
+            font-size: 0.6rem;
+            font-weight: 600;
+            line-height: 1.1rem;
+          }
         }
+      }
+      @keyframes progressAnimation {
+        from {
+          width: 30%;
+        }
+        to {
+          width: 100%;
+        }
+      }
     }
-    .bg{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 140%;
-        top: -25px;
-        left:-20%;
-        height: 100%;
-        background-color: $theme-dark;
-    }
-    #icons i{
-        width: 35px;
-        height: 35px;
-        font-size: 1.2rem;
-        line-height: 35px;
-        color:$theme-dark;
-        background-color: #fff;
-    }
-    #icons i:hover{
-        background-color: $theme-dark2;
-        color:#fff;
-    }
+  }
 }
