@@ -1,3 +1,86 @@
+<section id="project">
+    <div class="card-container">
+        <!-- <div class="row"> -->
+        {% for _ in site.data.projects %}
+        {% assign project = _.project %}
+            <div class="card-wrapper">
+            <!-- <div class="card-wrapper col-12 col-md-6 col-xl-4"> -->
+               <div class="card">
+                    {% if project.image %}
+                    <div class="img-wrap">
+                        <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+                    </div>
+                    {% endif %}
+                    <div class="text-wrap {% if project.image %}{% endif %}">
+                        <div class="title-wrap">
+                            <p class="date">{{ project.date }}</p>
+                            <div class="title">{{ project.title }}</div>
+                        </div>
+                        <div class="meta">
+                            <!-- {{ project.date }} -->
+                            {% if project.skills %}
+                            &middot;
+                            {% for skill in project.skills %}
+                            <span>#{{ skill }}</span>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="description">{{ project.description }}</div>
+                    </div>
+                    <div class="icons">
+                        {% if project.url %}
+                        {% assign url = project.url %}
+                        <a href="{{ url }}/subscription"><i class="far fa-eye"></i></a>
+                        <a href="{{ url }}"><i class="fas fa-star"></i></a>
+                        <a href="{{ url }}/fork"><i class="fas fa-code-branch"></i></a>
+                        {% endif %}
+                    </div>
+               </div>
+            </div>
+        {% endfor %}
+        <!-- </div> -->
+    </div>
+    <div class="bg"></div>
+</section>
+
+
+<!-- <section id="projects">
+    <div class="proj-cards">
+        {% for _ in site.data.projects %}
+        {% assign project = _.project %}
+        <a href="{{ project.url }}">
+            <div class="proj-card">
+                {% if project.image %}
+                <div class="img-wrap">
+                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+                </div>
+                {% endif %}
+                <div class="text-wrap {% if project.image %}{% endif %}">
+                    <div class="title-wrap">
+                        <div class="title">{{ project.title }}</div>
+                        {% if project.subtitle %}
+                        <div class="subtitle">: {{ project.subtitle }}</div>
+                        {% endif %}
+                    </div>
+                    <div class="meta">
+                        {{ project.date }}
+                        {% if project.skills %}
+                        &middot;
+                        {% for skill in project.skills %}
+                        <span>#{{ skill }}</span>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    <div class="description">{{ project.description }}</div>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+    <div class="bg"></div>
+</section> -->
+
+<!-- 
 <div id="projects">
     <h1 class="title">Projects  🙋🏻</h1>
     <div class="project-wrap">
@@ -32,4 +115,4 @@
         </a>
     {% endfor %}
     </div>
-</div>
+</div> -->
