@@ -1,0 +1,116 @@
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: rgba(0, 0, 0, 0.5);
+    .modal-background{
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content{
+        z-index: 99;
+        position: relative;
+        max-width:650px;
+        margin: 100px auto;
+        padding: 15px 5% 55px;
+        @media (max-width: 991px) {
+            width:70%;
+            margin: 80px auto;
+        }
+        @media (max-width: 576px) {
+            margin: 50px auto;
+            width:90%;
+        }
+        border-radius: 20px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+        -o-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+        -ms-box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2)!important;
+
+        .close-modal{
+            position: absolute;
+            width:35px;
+            height: 35px;
+            top: -10px;
+            right: -15px;
+            background-color: $theme-dark;
+            color:#fff;
+            border-radius: 50%;
+            text-align: center;
+            p{
+                font-size: 0.95rem;
+                font-weight: 600;
+                line-height: 1.45rem;
+            }
+        }
+        .close-modal:hover{
+            background-color: $theme-dark2;
+        }
+        br{line-height: 2.0rem;}
+        .header{
+            padding: 30px 0 40px;
+            margin-bottom:15px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            line-height: 0.8rem;
+            p{
+                margin:0px;
+                line-height: 1.5rem;
+            }
+            .date{
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 0.8rem;
+            }
+            .title{
+                padding:0;
+                margin-bottom: 15px;
+                font-size: 25px;
+                font-weight: 600;
+            }
+            .summary{
+                font-size: 0.95rem;
+            }
+        }
+        .content{
+            margin: auto 2%;
+            padding-top: 10px;
+            overflow: hidden;
+            img{
+                margin: 10px 10%;
+                width: 80%;
+                box-shadow: 0 0px 6px 1px rgba(0,0,0,0.1);
+            }
+            .description{
+                font-size: 0.95rem;
+            }
+            .sub-content{
+                margin: 30px auto;
+                .title{
+                    position: relative;
+                    margin: 10px auto;
+                    font-size: 1.05rem; 
+                    font-weight: 600;
+                }
+                .description{
+                    margin: auto 15px!important;
+                    overflow: hidden;
+                    li {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}    

@@ -1,0 +1,26 @@
+<div id="{{ id }}" class="modal" >
+    <div class="modal-background" onClick="close_modal()"></div>
+    <div class="modal-content">
+        <div class="close-modal"  onClick="close_modal()"><p>&times;</p></div>  
+        <div class="header">
+            <p class="date">{{ project.date }}</p>
+            <p class="title">{{ project.title }}</p>
+            <p class="summary">{{ project.summary }}</p>
+        </div>
+        <div class="content">
+            {% if project.image %}
+            <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+            {% endif%}
+            <div class="description">{{ project.description }}</div>
+            {% for content in project.contents %}
+            <div class="sub-content">
+                <div class="title">{{ content.title }}</div>
+                {% if content.image %}
+                <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="{{ content.title }}">
+                {% endif %}
+                <div class="description">{{ content.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

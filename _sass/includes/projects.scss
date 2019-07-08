@@ -1,15 +1,23 @@
 #project {
   position: relative;
   overflow: hidden;
-  .card-container {
+  .project-wrap{
     @extend %page-padding;
-    padding-top: 55px!important;
+    padding-top: 50px!important;
+    margin-bottom: 55px;
+    p.title {
+      padding-left: 10px;
+      color: $theme-dark;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .card-container {
     overflow: hidden;
-
     column-count: 3;
     -webkit-column-count: 3;
     -moz-column-count: 3;
-    @media (max-width: 1000px) {
+    @media (max-width: 1200px) {
       column-count: 2;
       -webkit-column-count: 2;
       -moz-column-count: 2;
@@ -20,7 +28,7 @@
       -moz-column-count: 1;
     }
     .card-wrapper {
-      padding: 25px 10px;
+      padding: 8px 10px;
       margin: 10px auto;
       display: inline-block;
       width: 100%;
@@ -39,7 +47,7 @@
         overflow: hidden;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: rgba(52, 73, 94, 0.25) 0px 10px 30px;
+        box-shadow: rgba(52, 73, 94, 0.15) 0px 1px 5px;
         .img-wrap {
           position: relative;
           overflow: hidden;
@@ -116,7 +124,7 @@
         -ms-transform: scale(1.03);
         -o-transform: scale(1.03);
         transform: scale(1.03);
-        // background-color: rgba(0, 0, 0, 0.02);
+        box-shadow: rgba(52, 73, 94, 0.15) 0px 5px 15px;
         .icons{
           a {
             i {
@@ -149,156 +157,3 @@
     background-color: rgba(0, 0, 0, 0.05);
   }
 }
-
-// #projects {
-//   position: relative;
-//   .proj-cards {
-//     @extend %page-padding;
-//     column-count: 3;
-//     -webkit-column-count: 3;
-//     -moz-column-count: 3;
-//     @media (max-width: 991px) {
-//       column-count: 2;
-//       -webkit-column-count: 2;
-//       -moz-column-count: 2;
-//     }
-//     @media (max-width: 576px) {
-//       column-count: 1;
-//       -webkit-column-count: 1;
-//       -moz-column-count: 1;
-//     }
-//     .proj-card {
-//       display: inline-block;
-//       flex-flow: column wrap;
-//       overflow: hidden;
-//       margin: 20px 0;
-//       border-radius: 20px;
-//       transition: all 0.2s ease-out;
-//       -webkit-transition: all 0.2s ease-out;
-//       -moz-transition: all 0.2s ease-out;
-//       box-shadow: 0 8px 25px -3px rgba(0, 0, 0, 0.19);
-//       .img-wrap {
-//         @media (max-width: 991px) {
-//           display: none;
-//         }
-//         img {
-//           width: 100%;
-//         }
-//       }
-//       .text-wrap {
-//         padding: 20px 25px;
-//         .title-wrap {
-//           position: relative;
-//         }
-//         .title::before {
-//           content: "";
-//           position: absolute;
-//           left: -25px;
-//           width: 8px;
-//           height: 100%;
-//           background-color: $theme-color;
-//           border-radius: 8px;
-//         }
-//         .title {
-//           color: $theme-dark;
-//           font-weight: 600;
-//         }
-//         .subtitle {
-//           color: $theme-dark;
-//           font-weight: 600;
-//           font-size: 0.85rem;
-//         }
-//         .meta,
-//         .meta span {
-//           color: rgba(0, 0, 0, 0.5);
-//           font-size: 0.75rem;
-//           margin: 3px 0 10px;
-//         }
-//         .description {
-//           font-size: 0.9rem;
-//         }
-//       }
-//     }
-//   }
-
-//   .bg {
-//     content: "";
-//     z-index: -99;
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0px;
-//     background-color: rgba(0, 0, 0, 0.05);
-//   }
-// }
-
-// #projects{
-//     @extend %page-padding;
-//     margin-top: 30px;
-//     .project-wrap{
-//         margin : 30px 0;
-//         column-count: 2;
-//         -webkit-column-count:2;
-//         -moz-column-count:2;
-//         @media (max-width: 991px) {
-//             column-count: 1;
-//             -webkit-column-count:1;
-//             -moz-column-count:1;
-//         }
-//     }
-//     .proj-card {
-//         display: inline-block;
-//         flex-flow: column wrap;
-//         overflow: hidden;
-//         margin : 20px 0;
-//         border-radius: 20px;
-//         transition: all .2s ease-out;
-//         -webkit-transition: all .2s ease-out;
-//         -moz-transition: all .2s ease-out;
-//         box-shadow: 0 8px 25px -3px rgba(0,0,0,0.19);
-//         .img-wrap {
-//             @media (max-width: 991px) {
-//                 display : none;
-//             }
-//             img{width:100%;}
-//         }
-//         .text-wrap {
-//             padding : 20px 25px;
-//             .title-wrap{
-//                 position: relative;
-//             }
-//             .title::before{
-//                 content:"";
-//                 position: absolute;
-//                 left: -25px;
-//                 width: 8px;
-//                 height: 100%;
-//                 background-color: $theme-color;
-//                 border-radius: 8px;
-//             }
-//             .title {
-//                 color: $theme-dark;
-//                 font-weight: 600;
-//             }
-//             .subtitle{
-//                 color: $theme-dark;
-//                 font-weight: 600;
-//                 font-size: 0.85rem;
-//             }
-//             .meta, .meta span{
-//                 color: rgba(0,0,0,0.5);
-//                 font-size: 0.75rem;
-//                 margin : 3px 0 10px;
-//             }
-//             .description{
-//                 font-size: 0.9rem;
-//             }
-//         }
-//     }
-//     .proj-card:hover{
-//         transform: translateY(1px);
-//         -webkit-transform: translateY(1px);
-//         -moz-transform: translateY(1px);
-//         box-shadow: 0 2px 5px 2px rgba(0,0,0,.1);
-//     }
-// }

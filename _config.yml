@@ -11,16 +11,27 @@ theme_settings :
   profile :
     image : assets/img/smile.png
     username : Nayeong Kim
-    description : "Hi, I'm Nayeong! 
-      creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily."
-
+    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    experience :
+      - start : 2017-05-03
+        end : 2018-05-06
+        experience : company name, title
+      - start : 2019-05-06 
+        end : 2019-05-06 
+        experience : company name2, title2
+    skills : 
+      - skill : HTML5 & CSS
+        value : 85  # value of %
+      - skill : Javascript & jQuery
+        value : 70 
+        
   # Icons
   icons :
     email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
     github: naye0ng
-    gitlab: 
-    bitbucket: 
+    gitlab: naye0ng
+    bitbucket: naye0ng
     google_plus:
     twitter:
     youtube:

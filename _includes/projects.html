@@ -1,11 +1,12 @@
 <section id="project">
-    <div class="card-container">
-        <!-- <div class="row"> -->
-        {% for _ in site.data.projects %}
-        {% assign project = _.project %}
+    <div class="project-wrap">
+        <p class="title">PROJECTS  🙋🏻</p>
+        <div class="card-container">
+            {% for _ in site.data.projects %}
+            {% assign project = _.project %}
+            {% assign id = id | plus: 1 %}
             <div class="card-wrapper">
-            <!-- <div class="card-wrapper col-12 col-md-6 col-xl-4"> -->
-               <div class="card">
+                <div class="card">
                     {% if project.image %}
                     <div class="img-wrap">
                         <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
@@ -17,7 +18,6 @@
                             <div class="title">{{ project.title }}</div>
                         </div>
                         <div class="meta">
-                            <!-- {{ project.date }} -->
                             {% if project.skills %}
                             &middot;
                             {% for skill in project.skills %}
@@ -34,85 +34,22 @@
                         <a href="{{ url }}"><i class="fas fa-star"></i></a>
                         <a href="{{ url }}/fork"><i class="fas fa-code-branch"></i></a>
                         {% endif %}
+                        {% if project.modal %}
+                        <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
+                        {% endif %}
                     </div>
-               </div>
+                </div>
             </div>
-        {% endfor %}
-        <!-- </div> -->
+            <!-- Modal Box -->
+            {% if project.modal %}
+            {% include modal.html %}
+            {% endif %}
+            <!-- Modal Box -->
+            {% endfor %}
+        </div>
     </div>
     <div class="bg"></div>
 </section>
 
-
-<!-- <section id="projects">
-    <div class="proj-cards">
-        {% for _ in site.data.projects %}
-        {% assign project = _.project %}
-        <a href="{{ project.url }}">
-            <div class="proj-card">
-                {% if project.image %}
-                <div class="img-wrap">
-                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
-                </div>
-                {% endif %}
-                <div class="text-wrap {% if project.image %}{% endif %}">
-                    <div class="title-wrap">
-                        <div class="title">{{ project.title }}</div>
-                        {% if project.subtitle %}
-                        <div class="subtitle">: {{ project.subtitle }}</div>
-                        {% endif %}
-                    </div>
-                    <div class="meta">
-                        {{ project.date }}
-                        {% if project.skills %}
-                        &middot;
-                        {% for skill in project.skills %}
-                        <span>#{{ skill }}</span>
-                        {% endfor %}
-                        {% endif %}
-                    </div>
-                    <div class="description">{{ project.description }}</div>
-                </div>
-            </div>
-        </a>
-        {% endfor %}
-    </div>
-    <div class="bg"></div>
-</section> -->
-
-<!-- 
-<div id="projects">
-    <h1 class="title">Projects  🙋🏻</h1>
-    <div class="project-wrap">
-    {% for _ in site.data.projects %}
-        {% assign project = _.project %}
-        <a href="{{ project.url }}">
-            <div class="proj-card">
-                {% if project.image %}
-                <div class="img-wrap"> 
-                    <img src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
-                </div>
-                {% endif %}
-                <div class="text-wrap {% if project.image %}{% endif %}">
-                    <div class="title-wrap">
-                        <div class="title">{{ project.title }}</div>
-                        {% if project.subtitle %}
-                        <div class="subtitle">: {{ project.subtitle }}</div>
-                        {% endif %}
-                    </div>
-                    <div class="meta">
-                            {{ project.date }}
-                            {% if project.skills %}
-                            &middot;
-                                {% for skill in project.skills %}
-                                <span>#{{ skill }}</span>
-                                {% endfor %}
-                            {% endif %}
-                        </div>
-                    <div class="description">{{ project.description }}</div>
-                </div>
-            </div>
-        </a>
-    {% endfor %}
-    </div>
-</div> -->
+<!-- modal -->
+<script type="text/javascript" src="{{ site.url }}/assets/js/modal.js"></script>
