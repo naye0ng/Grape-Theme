@@ -1,4 +1,4 @@
-// definition of tag style in post
+// Definition of tag style in post
 #post{
     h1, h2, h3, h4, h5, h6{
         margin : 15px 0 10px 0;
@@ -45,16 +45,18 @@
         box-shadow: 0 0px 6px 1px rgba(0,0,0,0.1);
     }
     table {
-        display: inline-block;
         width: 100%;
-        margin : 10px 0;
+        margin : 10px auto;
         word-wrap: break-word;
+        border-collapse:collapse;
+        padding: auto;
         thead{
             background-color: #ced3d638;
         }
         td, th {
             padding: 0.5em 1em;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+            font-size: 16px;
         }
     }
     blockquote {

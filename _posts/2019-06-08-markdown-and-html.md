@@ -86,11 +86,13 @@ you can easy to change style in `_utility.html` and a sample of the formatting f
 <br>
 
 <h2>5. table</h2>
-
-| Header 1  | Header 2 |
-| ------- | ------- |
-| Content 1  | Content 2 |
-
-
-<br>
-
+{% highlight html %}
+| Header 1  | Header 2 | Header 3 |
+| :------- | :-------: | -------: |
+| Content 1  | Content 2 | Content 3 |
+| Content 1  | Content 2 | Content 3 |
+{% endhighlight %}
+| Header 1  | Header 2 | Header 3 |
+| :------- | :-------: | -------: |
+| Content 1 | Content 2 | Content 3 |
+| Content 1 | Content 2 | Content 3 |
