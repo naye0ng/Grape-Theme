@@ -6,7 +6,7 @@ Welcome to Grape Theme!  It is good for a portfolio as well as a blog.
 <br>
 Customize Grape-Theme and use it for free.
 
-[Demo]()
+[Demo](https://grape-theme.netlify.com)
 
 
 
@@ -141,7 +141,7 @@ contents :
 
 ## Posts in Grape theme
 
-이 블로그의 모든 포스팅 스타일은  `_sass/base/_utility.scss` 에 정의되어 있으며 [Demo page]()와 [Demo page]()에서 여러 태그들의 출력을 확인할 수 있습니다.
+이 블로그의 모든 포스팅 스타일은  `_sass/base/_utility.scss` 에 정의되어 있으며 [Demo page](https://grape-theme.netlify.com/2019/06/08/markdown-and-html.html)와 [Demo page](https://grape-theme.netlify.com/2019/06/09/grape-theme-style.html)에서 여러 태그들의 출력을 확인할 수 있습니다.
 
 ### Create a new post
 
