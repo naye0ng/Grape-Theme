@@ -48,7 +48,7 @@
       width: 100%;
       height: calc(100% + 110px);
       top: -55px;
-      background-color: $theme-dark;   
+      background-color: $theme-dark;
     }
   }
   #career {
@@ -68,7 +68,7 @@
         margin-left: 3%;
         border-left: 5px solid $theme-color;
         list-style-type: none;
-        li{
+        li {
           animation-name: fadein;
           animation-duration: 1s;
           animation-timing-function: ease-in-out;
@@ -104,11 +104,11 @@
       }
       @keyframes fadein {
         from {
-          transform:translateY(-10%);
+          transform: translateY(-10%);
           opacity: 0;
         }
-        to{
-          transform:translateY(0%);
+        to {
+          transform: translateY(0%);
           opacity: 1;
         }
       }

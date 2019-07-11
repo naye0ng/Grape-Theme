@@ -1,5 +1,5 @@
 - project :
-    print : False # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
     url : https://github.com/naye0ng/Grape-Theme # Full URL
     image : "portfolio.png" # path: assets/project/
@@ -26,37 +26,3 @@
             <li>OG Tag 추가</li>
             <li>profile 이미지 효과</li>
             <li>gem 배포</li>
-
-- project :
-    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal : True
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    image : # path: assets/project/
-    date : 2019.06.09 - Developing
-    title : Grape-Theme
-    summary : A awesome jekyll theme!
-    description : This project is my first jekyll theme. and everyone can customize this easily.  
-    contents :
-        - title :
-          image :
-          description :
-        - title :
-          image :
-          description : 
-
-- project :
-    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal : True
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    image : # path: assets/project/
-    date : 2019.06.09 - Developing
-    title : Grape-Theme
-    summary : A awesome jekyll theme!
-    description : This project is my first jekyll theme. and everyone can customize this easily.  
-    contents :
-        - title :
-          image :
-          description :
-        - title :
-          image :
-          description : 

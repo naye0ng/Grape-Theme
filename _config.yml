@@ -2,7 +2,7 @@
 baseurl: ""
 url : "https://naye0ng.github.io"
 
-# Theme Settings
+# Blog Settings
 theme_settings :
   title : Grape Theme
   favicon : assets/favicon.ico
@@ -16,22 +16,17 @@ theme_settings :
       - start : 2017-05-03
         end : 2018-05-06
         experience : company name, title
-      - start : 2019-05-06 
-        end : 2019-05-06 
-        experience : company name2, title2
     skills : 
       - skill : HTML5 & CSS
-        value : 85  # value of %
-      - skill : Javascript & jQuery
-        value : 70 
+        value : 85  # Percent value
         
   # Icons
   icons :
     email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
     github: naye0ng
-    gitlab: naye0ng
-    bitbucket: naye0ng
+    gitlab: 
+    bitbucket: 
     google_plus:
     twitter:
     youtube:

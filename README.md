@@ -1,50 +1,170 @@
-# grape-theme
+# Grape-Theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+블로그뿐만 아니라 포트폴리오 페이지도 지원하는 Grape-Theme를 자유롭게 사용하세요.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Welcome to Grape Theme!  It is good for a portfolio as well as a blog.
+<br>
+Customize Grape-Theme and use it for free.
 
-TODO: Delete this and the text above, and describe your gem
+[Demo]()
+
 
 
 ## Installation
 
-Add this line to your Jekyll site's `Gemfile`:
+1. Fork and clone the Grape Theme repo
 
-```ruby
-gem "grape-theme"
+   ```
+   git clone https://github.com/naye0ng/naye0ng.github.io.git
+   ```
+
+2. Install Jekyll 
+
+   ```
+   gem install jekyll
+   ```
+
+3. Install the theme's dependencies
+
+   ```
+   bundle install
+   ```
+
+4. Update `_config.yml` and `projects.yml` with your own settings.
+
+5. Run the Jekyll server
+
+   ```
+   bundle exec jekyll serve
+   ```
+
+   
+
+## Customizing
+
+Grape-Theme에서는 자랑할 만한 두 가지 기능을 제공합니다. 홈 화면의 프로필 섹션과 포트폴리오 페이지의 프로젝트, 상세 프로필 기능이 그것 입니다. 이 모든 기능들은  `_config.yml` 와 `projects.yml` 파일을 수정하는 것만으로도 충분합니다.
+
+
+
+### Blog Settings
+
+기본적인 블로그 설정은 `config.yml` 에서 가능합니다.
+
+#### Site configuration
+
+```
+baseurl: "{subpath}"
+url : "https://{username}.github.io"
+
+theme_settings :
+  title : {blog title}
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
 
-```yaml
-theme: grape-theme
+
+#### Profile Settings
+
+간단한 프로필 정보는 홈 화면에서 출력되며, experience 및 skills 부분은 포트폴리오 페이지에서 함께 보여집니다.
+
+```
+profile :
+  image : assets/img/{prorile image}
+    username : {username}
+    description : 
+    experience :
+      - start :
+        end : 
+        experience : {company name}, {title}
+     skills : 
+      - skill : 
+        value : 85  # Percent value
 ```
 
-And then execute:
 
-    $ bundle
 
-Or install it yourself as:
+#### Pagination
 
-    $ gem install grape-theme
+한 페이지에서 보여줄 포스팅 개수를 정의합니다.
 
-## Usage
+```
+paginate: 5
+```
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+#### Disqus
 
-## Development
+[Disqus shortname](https://help.disqus.com/en/articles/1717111-what-s-a-shortname)을 설정하고, 포스팅 속성에 `comments : True` 를 추가하면 블로그 글에서 댓글을 사용할 수 있습니다.
 
-To set up your environment to develop this theme, run `bundle install`.
+``` 
+disqus_shortname :
+```
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `grape-theme.gemspec` accordingly.
+
+### Portfolio Settings
+
+프로젝트 세팅은 `_data/projects.yml`에서 가능합니다.
+
+포트폴리오 페이지에서는 프로젝트 목록과 상세보기를 모달로 지원합니다. 물론 상세보기는 선택적이며, 상세값이 False인 경우 모달 버튼은 생성되지 않습니다.
+
+- **print** : True를 선택한다면, 블로그의 홈 화면에서도 프로젝트의 정보가 출력됩니다.
+- **modal** : True를 선택한다면 모달 버튼이 활성와 됩니다.
+
+```
+print : True
+modal : True  
+```
+당신의 프로젝트에 대한 링크와 상세 설명을 아래와 같이 추가하세요.
+
+```
+url : https://github.com/naye0ng/Grape-Theme # Full URL
+image : "portfolio.png" # path: assets/project/
+date : 2019.06.09 - 2019.07.11
+title : 
+summary : 
+description :  
+# modal contents
+contents :
+  - title :
+    image :      	    
+    description : 
+```
+
+
+
+### Colors
+
+블로그의 컬러들은 `_sass/base/_variable.scss` 에서 가능합니다.
+
+
+
+## Posts in Grape theme
+
+이 블로그의 모든 포스팅 스타일은  `_sass/base/_utility.scss` 에 정의되어 있으며 [Demo page]()와 [Demo page]()에서 여러 태그들의 출력을 확인할 수 있습니다.
+
+### Create a new post
+
+1. Create a `.md` inside `_posts` folder
+
+   ```
+   2019-07-11-grape-theme.md
+   ```
+   > 한글로 파일 이름을 만드는 경우, 구글 검색을 붙였을때 문제가 발생합니다. 되로록 영어를 사용해주세요:D
+2. Write the [Front Matter](https://jekyllrb.com/docs/front-matter/) and content in the file.
+
+   ```
+   ---
+   layout: post
+   title: title
+   subtitle : subtitle
+   tags: [tag1, tag2]
+   author: 
+   comments : 
+   ---
+   ```
+
+
 
 ## License
 

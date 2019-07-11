@@ -1,44 +1,44 @@
 <!-- User Profile -->
 <div id="profile">
-    {% assign profile = site.theme_settings.profile %}
-    <a href="{{ site.baseurl }}/portfolio">
-        <div class="img-wrap">
-            <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
-        </div>
-    </a>
-    <p class="username">{{ profile.username }}</p>
-    <p class="description">{{ profile.description }}</p>
+  {% assign profile = site.theme_settings.profile %}
+  <a href="{{ site.baseurl }}/portfolio">
+    <div class="img-wrap">
+      <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
+    </div>
+  </a>
+  <p class="username">{{ profile.username }}</p>
+  <p class="description">{{ profile.description }}</p>
 
-    <!-- Social icons from Font Awesome -->
-    <ul id="icons">
+  <!-- Social icons from Font Awesome -->
+  <ul id="icons">
     {% include icons.html %}
-    </ul>
+  </ul>
 </div>
 <!-- Tag Navigation -->
 <div id="tag-wrap">
-    <a href="{{ site.url }}/tags">
-        <p class="title">TAGS</p>
-    </a>
-    {% for tag in site.tags %}
-        <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
-            <span class="tag">{{ tag | first }}</span>
-        </a>
-    {% endfor %}
+  <a href="{{ site.url }}/tags">
+    <p class="title">TAGS</p>
+  </a>
+  {% for tag in site.tags %}
+  <a href="{{site.baseurl}}/tags#{{ tag | first | cgi_encode }}">
+    <span class="tag">{{ tag | first }}</span>
+  </a>
+  {% endfor %}
 </div>
 <!-- Project -->
 <div id="proj-wrap">
-    <a href="{{ site.url }}/portfolio#projects">
-        <p class="title">PROJECTS 🙋🏻 </p>
-        <hr class="proj-hr">
-        {% for _ in site.data.projects %}
-        {% assign project = _.project %}
-        {% if project.print %}
-        <div class="proj-content">
-            <div class="proj-title">{{ project.title }}</div>
-            <div class="meta">{{ project.date }}</div>
-        </div>
-        <hr class="proj-hr">
-        {% endif %}
-        {% endfor %}
-    </a>
+  <a href="{{ site.url }}/portfolio#projects">
+    <p class="title">PROJECTS 🙋🏻 </p>
+    <hr class="proj-hr">
+    {% for _ in site.data.projects %}
+    {% assign project = _.project %}
+    {% if project.print %}
+    <div class="proj-content">
+      <div class="proj-title">{{ project.title }}</div>
+      <div class="meta">{{ project.date }}</div>
+    </div>
+    <hr class="proj-hr">
+    {% endif %}
+    {% endfor %}
+  </a>
 </div>

@@ -2,35 +2,36 @@
 layout: page
 ---
 <div id="tags">
-    <section class="bg"></section>
-    <h1 class="title">{{ page.title }}</h1>
-    <ul class="tag-cloud">
+  <section class="bg"></section>
+  <h1 class="title">{{ page.title }}</h1>
+  <ul class="tag-cloud">
     {% for tag in site.tags %}
-        <a href="#{{ tag | first | slugize }}">
-            <li class="tag" style="background-color: rgba(86,61,124,{{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 50 | divided_by: 100.0}})">
-                {{ tag | first }}   
-                <span class="meta">{{ tag | last | size }}</span>
-            </li>
+    <a href="#{{ tag | first | slugize }}">
+      <li class="tag"
+        style="background-color: rgba(86,61,124,{{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 50 | divided_by: 100.0}})">
+        {{ tag | first }}
+        <span class="meta">{{ tag | last | size }}</span>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+  <div class="tag-groups">
+    {% for tag in site.tags %}
+    <div class="tag-group">
+      {% capture group %}{{ tag | first }}{% endcapture %}
+      <h4 id="{{ group | cgi_escape }}" class="title">{{ group | cgi_escape }}</h4>
+      <div class="items">
+        {% for post in site.tags[group] %}
+        <a href="{{ post.url | relative_url }}" class="post-link">
+          <div class="item">
+            <p class="meta">{{ post.date  | date: "%B %-d, %Y" }}</p>
+            <p class="title">{{ post.title }}</p>
+          </div>
         </a>
-    {% endfor %}
-    </ul>
-    <div class="tag-groups">
-    {% for tag in site.tags %}
-        <div class="tag-group">
-        {% capture group %}{{ tag | first }}{% endcapture %}
-            <h4 id="{{ group | cgi_escape }}" class="title">{{ group | cgi_escape }}</h4>
-            <div class="items">
-                {% for post in site.tags[group] %}
-                <a href="{{ post.url | relative_url }}" class="post-link">
-                    <div class="item">
-                        <p class="meta">{{ post.date  | date: "%B %-d, %Y" }}</p>
-                        <p class="title">{{ post.title }}</p>
-                    </div>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+      </div>
     </div>
+    {% endfor %}
+  </div>
 
 </div>

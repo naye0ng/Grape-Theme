@@ -5,53 +5,53 @@ layout: page
 
 </div><!-- This Tag means End .container -->
 <div id="protfolio">
-    <section id="about-me">
-        <div class="row">
-            <div class="img-wrap col-12 col-md-4">
-                <div class="img">
-                    <img src="{{ site.baseurl }}/{{ profile.image }}" alt="user_image" >
-                </div>
-            </div>
-            <div class="text-wrap col-12 col-md-8"> 
-                <h2 class="username">{{ profile.username }}</h2>
-                <p class="description">{{ profile.description }}</p>
-
-                <ul id="icons">
-                {% include icons.html %}
-                </ul>
-            </div>
+  <section id="about-me">
+    <div class="row">
+      <div class="img-wrap col-12 col-md-4">
+        <div class="img">
+          <img src="{{ site.baseurl }}/{{ profile.image }}" alt="user_image">
         </div>
-        <div class="bg"></div>
-    </section>
-    <!-- career section -->
-    <section id="career" class="row">
-        <article class="exper col-12 col-md-6">
-            <p class="title">EXPERIENCE</p>
-            <ul class="exper-list">
-            {% for exp in  profile.experience %}
-                <li class="meta">
-                    <p class="date">{{ exp.start }} ~ {{ exp.end }}</p>
-                    <p class="description">{{ exp.experience }}</p>
-                </li>
-            {% endfor %}
-            </ul>
-        </article>
-        <article class="skills col-12 col-md-6">
-            <p class="title">SKILLS</p>
-            <ul class="skill-list">
-                {% for _ in profile.skills %}
-                <li class="skill">
-                    <p class="name">{{ _.skill }}</p>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: {{ _.value }}%">
-                            <div class="progress-value">{{ _.value }}%</div>
-                        </div>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </article>
-    </section>
+      </div>
+      <div class="text-wrap col-12 col-md-8">
+        <h2 class="username">{{ profile.username }}</h2>
+        <p class="description">{{ profile.description }}</p>
 
-    {% include projects.html %}
+        <ul id="icons">
+          {% include icons.html %}
+        </ul>
+      </div>
+    </div>
+    <div class="bg"></div>
+  </section>
+  <!-- career section -->
+  <section id="career" class="row">
+    <article class="exper col-12 col-md-6">
+      <p class="title">EXPERIENCE</p>
+      <ul class="exper-list">
+        {% for exp in  profile.experience %}
+        <li class="meta">
+          <p class="date">{{ exp.start }} ~ {{ exp.end }}</p>
+          <p class="description">{{ exp.experience }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="skills col-12 col-md-6">
+      <p class="title">SKILLS</p>
+      <ul class="skill-list">
+        {% for _ in profile.skills %}
+        <li class="skill">
+          <p class="name">{{ _.skill }}</p>
+          <div class="progress">
+            <div class="progress-bar" style="width: {{ _.value }}%">
+              <div class="progress-value">{{ _.value }}%</div>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </section>
+
+  {% include projects.html %}
 </div>
