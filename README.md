@@ -1,5 +1,7 @@
 # Grape-Theme
 
+![home](./assets/img/home.png)
+
 블로그뿐만 아니라 포트폴리오 페이지도 지원하는 Grape-Theme를 자유롭게 사용하세요.
 
 Welcome to Grape Theme!  It is good for a portfolio as well as a blog.
@@ -92,7 +94,7 @@ profile :
 
 한 페이지에서 보여질 포스팅 개수를 정의합니다.
 
-Defines the number of posts to be shown on one page
+Defines the number of posts to be shown on one page.
 
 ```
 paginate: 5
@@ -114,11 +116,14 @@ disqus_shortname :
 
 ### Portfolio Settings
 
+![home](./assets/img/portfolio.png)
+
 프로젝트 세팅은 `_data/projects.yml`에서 가능합니다.
 
 The Project configuration is available in `_data/projects.yml`.
 
 포트폴리오 페이지에서는 프로젝트 목록과 상세보기를 모달로 지원합니다. 물론 상세보기는 선택적이며, 상세값이 `modal : False`인 경우 모달 버튼은 생성되지 않습니다.
+
 The portfolio page provides projects and detailed views by modal.   If `modal : False` is selected, modal will not be displayed on site. 
 
 - **print** : 
