@@ -127,11 +127,18 @@ The Project configuration is available in `_data/projects.yml`.
 The portfolio page provides projects and detailed views by modal.   If `modal : False` is selected, modal will not be displayed on site. 
 
 - **print** : 
+  
   -  `print : True` 를 선택한다면, 블로그의 홈 화면에서도 프로젝트의 정보가 출력됩니다.
   - If `print : True` is selected, it will be displayed on landing page
+  
+   ![print project](./assets/img/print-project.png)
+  
 - **modal** 
-  -  `modal : True` 를 선택한다면 모달 버튼이 활성와 됩니다.
-  -  If `modal : True` is selected, modal will be displayed on the Portfolio page
+  - `modal : True` 를 선택한다면 모달 버튼이 활성와 됩니다.
+  
+  - If `modal : True` is selected, modal will be displayed on the Portfolio page
+  
+    ![home](./assets/img/modal.png)
 
 ```
 print : True
