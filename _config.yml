@@ -1,6 +1,6 @@
 # Site Settings
 baseurl: ""
-url : "https://grape-theme.netlify.com/"
+url : "https://grape-theme.netlify.com"
 
 # Blog Settings
 theme_settings :
