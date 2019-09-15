@@ -17,7 +17,7 @@ Customize Grape-Theme and use it for free.
 1. Fork and clone the Grape Theme repo
 
    ```
-   git clone https://github.com/naye0ng/naye0ng.github.io.git
+   git clone https://github.com/naye0ng/Grape-Theme.git
    ```
 
 2. Install Jekyll 
