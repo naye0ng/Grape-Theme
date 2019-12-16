@@ -47,7 +47,7 @@
         overflow: hidden;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: rgba(52, 73, 94, 0.15) 0px 1px 5px;
+        box-shadow: rgba($theme-dark2, 0.15) 0px 1px 5px;
         .img-wrap {
           position: relative;
           overflow: hidden;
@@ -124,7 +124,7 @@
         -ms-transform: scale(1.03);
         -o-transform: scale(1.03);
         transform: scale(1.03);
-        box-shadow: rgba(52, 73, 94, 0.15) 0px 5px 15px;
+        box-shadow: rgba($theme-dark2, 0.15) 0px 5px 15px;
         .icons{
           a {
             i {
