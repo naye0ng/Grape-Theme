@@ -42,3 +42,12 @@
     {% endfor %}
   </a>
 </div>
+
+<div id="search-wrap" class="search">
+  <form action="search.html" method="get">
+    <input type="text" name="query" class="form-control" placeholder="{{site.search.placeholder}}">
+    <button class="btn btn-default" type="submit" value="search">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+</div>
