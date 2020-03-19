@@ -13,7 +13,7 @@ theme_settings :
   profile :
     image : assets/img/dp.jpg
     username : Kulbhushan Singh
-    description : I am a BCA student in IITM Janakpuri.I'm intrested in solving Algorithms. 
+    description : I am a BCA student in IITM Janakpuri.I am intrested in solving Algorithms. 
     experience :
       - #start : 11-07-2019 
         #end : present
