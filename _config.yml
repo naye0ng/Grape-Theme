@@ -11,7 +11,7 @@ theme_settings :
 
   # Profile Settings
   profile :
-    image : assets/img/dp.jpg
+    image : assets/img/dp.png
     username : Kulbhushan Singh
     description : I am a BCA student in IITM Janakpuri.I am intrested in solving Algorithms. 
     experience :
