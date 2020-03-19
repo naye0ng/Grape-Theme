@@ -1,6 +1,6 @@
 - project :
     print : False # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    modal : False # If 'True' is selected, modal can open in 'portfolio.html'. 
     url : https://github.com/iammarco11/amfoss_tshirts # Full URL
     image : "product-view.png" # path: assets/project/
     date : 28.10.2019 - 12.11.2019
