@@ -14,7 +14,7 @@ theme_settings :
     image : assets/img/dp.png
     username : Kulbhushan Singh
     description : I am a BCA student in IITM Janakpuri.I am intrested in solving Algorithms. 
-    experience :
+    #experience :
       - #start : 11-07-2019 
         #end : present
        # experience : <a href="https://amfoss.in/">amfoss-club</a>
@@ -29,7 +29,7 @@ theme_settings :
   # Icons
   icons :
     email:  iamkulbhushansingh@gmail.com
-    linkedin:  linkedin.com/iamkulbhushansingh # Full URL 
+    linkedin:  https//:www.linkedin.com/iamkulbhushansingh # Full URL 
     github: iamkulbhushansingh
     gitlab: 
     bitbucket: 
