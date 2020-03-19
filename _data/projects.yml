@@ -1,5 +1,5 @@
 - project :
-    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    print : False # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
     url : https://github.com/iammarco11/amfoss_tshirts # Full URL
     image : "product-view.png" # path: assets/project/
@@ -33,6 +33,7 @@
           image : cart.png
           description : <li>Here the users can view the products that they have added to the cart.</li>
                         <li>There is a checkout option, I have integrated gpay to it</li>         
+                        
 
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
