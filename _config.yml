@@ -1,45 +1,43 @@
 # Site Settings
-name: iammarco11 blog
+name: iamkulbhushansingh blog
 description: just my experiences in open source :)
 baseurl: ""
-url : "https://iammarco11.github.io"
+url : "https://iamkulbhushansingh.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Akshay Praveen Nair -Innovator|Problem Solver|Web Developer
+  title : Kulbhushan Singh -Algorithm
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
     image : assets/img/dp.jpg
-    username : Akshay Praveen Nair
-    description : I am a BTech student in Amrita Vishwa Vidyapeetham. My course is core CSE. 
+    username : Kulbhushan Singh
+    description : I am a BCA student in IITM Janakpuri.I'm intrested in solving Algorithms. 
     experience :
-      - start : 11-07-2019 
-        end : present
-        experience : <a href="https://amfoss.in/">amfoss-club</a>
+      - #start : 11-07-2019 
+        #end : present
+       # experience : <a href="https://amfoss.in/">amfoss-club</a>
     skills : 
       - skill : HTML5
-        value : 75  # Percent value
-      - skill : django
-        value : 79
+        value : 60  # Percent value
       - skill : python
-        value : 80
+        value : 60
       - skill : c++
-        value : 40
+        value : 80
 
   # Icons
   icons :
-    email:  akshaypraveennair11@gmail.com
-    linkedin:  # Full URL 
-    github: iammarco11
-    gitlab: iammarco11
+    email:  iamkulbhushansingh@gmail.com
+    linkedin:  linkedin.com/iamkulbhushansingh # Full URL 
+    github: iamkulbhushansingh
+    gitlab: 
     bitbucket: 
     google_plus:
-    twitter: akshaay_11
+    twitter: 
     youtube:
     facebook: 
-    instagram: akshaay.11
+    instagram: i_m_rajput.py
 
   # Disqus
   disqus_shortname :
