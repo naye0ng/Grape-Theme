@@ -10,7 +10,7 @@
             font-size : 1.2rem;
         }
         .meta{
-            color : $text-gray;
+            color : #FF0000;
             font-size: 0.85rem;
             margin-top : 15px;
         }
@@ -18,6 +18,8 @@
     .post-content{
         overflow: hidden;
         margin-bottom: 100px;
+        code-color: 000000
+        
     }
 }
 .top-btn{
@@ -55,7 +57,7 @@
     }
 }
 .top-btn:hover{
-    background-color: $theme-dark2;
+    background-color: $dark-theme;
 }
 
 #comments{

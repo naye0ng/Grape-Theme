@@ -1,10 +1,11 @@
 <section id="project">
   <div class="project-wrap">
-    <p class="title">PROJECTS 🙋🏻</p>
+    <p class="title">PROJECTS</p>
     <div class="card-container">
       {% for _ in site.data.projects %}
       {% assign project = _.project %}
       {% assign id = id | plus: 1 %}
+      <a title="{{ id }}" onClick="open_modal(this.title)">
       <div class="card-wrapper">
         <div class="card">
           {% if project.image %}
@@ -35,7 +36,7 @@
             <a href="{{ url }}/fork"><i class="fas fa-code-branch"></i></a>
             {% endif %}
             {% if project.modal %}
-            <a title="{{ id }}" onClick="open_modal(this.title)" class="modal-btn"><i class="fas fa-plus"></i></a>
+            </a>
             {% endif %}
           </div>
         </div>

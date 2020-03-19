@@ -3,37 +3,58 @@
 <header>
   <nav>
     <ul>
-      {% case current[0] %}
-      {% when 'tags'%}
-      <!-- tags -->
+        {% case current[0] %}
+      
+        {% when 'tags'%}
+        <!-- tags -->
+        <a href="{{ site.url }}">
+          <li class="btn-nav">Home</li>
+        </a>
+        <a href = "{{site.url}}/tags/">
+          <li class="current">Tags</li>
+        </a>
+        <a href="{{ site.url }}/blog">
+          <li class="btn-nav">Blog</li>
+        </a>
+        <!-- blog -->
+        {% when 'blog'%}
+        <a href="{{ site.url }}">
+          <li class="btn-nav">Home</li>
+        </a>
+        <a href="{{ site.url }}/tags">
+          <li class="btn-nav">Tags</li>
+        </a>
+        <a href="{{site.url}}/blog/">
+          <li class="current">Blog</li>
+        </a>
+        {%else%}
+        {% case current[-1] %}
+      {%when 'html'%}
       <a href="{{ site.url }}">
-        <li class="btn-nav">Blog</li>
-      </a>
-      <li class="current">Tags</li>
-      <a href="{{ site.url }}/portfolio">
-        <li class="btn-nav">Portfolio</li>
-      </a>
-      <!-- portfolio -->
-      {% when 'portfolio'%}
-      <a href="{{ site.url }}">
-        <li class="btn-nav">Blog</li>
+        <li class="btn-nav">Home</li>
       </a>
       <a href="{{ site.url }}/tags">
         <li class="btn-nav">Tags</li>
       </a>
-      <li class="current">Portfolio</li>
-      {% else %}
-      <!-- others -->
-      <a href="{{ site.url }}">
-        <li class="current btn-nav">Blog</li>
+      <a href="{{site.url}}/blog/">
+        <li class="current">Blog</li>
       </a>
-      <a href="{{ site.url }}/tags">
-        <li class="btn-nav">Tags</li>
-      </a>
-      <a href="{{ site.url }}/portfolio">
-        <li class="btn-nav">Portfolio</li>
-      </a>
+        
+        {% else %}
+        <!-- others -->
+        <a href="{{ site.url }}">
+          <li class="current btn-nav">Home</li>
+        </a>
+        <a href="{{ site.url }}/tags">
+          <li class="btn-nav">Tags</li>
+        </a>
+        <a href="{{ site.url }}/blog">
+          <li class="btn-nav">Blog</li>
+        </a>
+      
       {% endcase %}
+      {% endcase %}
+      
     </ul>
   </nav>
 </header>

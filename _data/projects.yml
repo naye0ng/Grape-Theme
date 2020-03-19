@@ -1,31 +1,38 @@
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
     modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url : https://github.com/naye0ng/Grape-Theme # Full URL
-    image : "portfolio.png" # path: assets/project/
-    date : 2019.06.09 - Developing
-    title : Grape-Theme
-    summary : A awesome jekyll theme!
-    description : This project is my first jekyll theme. and everyone can customize this easily.  
+    url : https://github.com/iammarco11/amfoss_tshirts # Full URL
+    image : "product-view.png" # path: assets/project/
+    date : 28.10.2019 - 12.11.2019
+    title : Django shopping cart
+    summary : Just a portal where amfoss club members can buy tshirts. I have hosted it in heroku also.<br> <a href="https://amfoss-tshirts.herokuapp.com">amfoss-tshirts</a>
+    description : This is a shopping cart made with django for amfoss club members to buy tshirts. I have integrated gpay in the cart so the users can checkout.
     contents :
-        - title : 1. 블로그 첫 화면 구성
-          image : home.png
-          description : <li>Responsive Layout</li>
-            <li>User Profile</li> 
-            <li>Tags</li> 
-            <li>Projects</li> 
-            <li>Pagination</li>
-        - title : 2. 태그 페이지
-          image : tags.png
-          description : <li>Responsive Layout</li> 
-            <li>Tags</li> 
-        - title : 3. 남은 개발 과제
-          image :
-          description : <li>project 부분 디자인 변경</li>
-            <li>favicon.ico, search 기능</li>
-            <li>OG Tag 추가</li>
-            <li>profile 이미지 효과</li>
-            <li>gem 배포</li> 
+        - title : 1. Homepage
+          image : homepage.png
+          description : <li>Users, if not logged in gets this page.</li>
+            
+        - title : 2. Register
+          image : register.png
+          description : <liHere the users can register</li> 
+                        <li>It checks whether the mail is valid or not.</li>
+                        <li>The portfolio site and the profile picture is optional.</li> 
+        - title : 3. Login
+          image : login.png
+          description : <li>Here the users can login with their credentials</li>
+        
+        - title : 4. Product view
+          image : product-view.png
+          description : <li>Here the users can view the products.</li>
+
+        - title : 5. Product details
+          image : product-detail.png
+          description : <li>Here the users can select the size quantity and sex.</li>
+        
+        - title : 6. Cart
+          image : cart.png
+          description : <li>Here the users can view the products that they have added to the cart.</li>
+                        <li>There is a checkout option, I have integrated gpay to it</li>         
 
 - project :
     print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 

@@ -1,4 +1,0 @@
----
-layout: portfolio
-title : Portfolio
----

@@ -1,37 +1,45 @@
 # Site Settings
+name: iammarco11 blog
+description: just my experiences in open source :)
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://iammarco11.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : Akshay Praveen Nair -Innovator|Problem Solver|Web Developer
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
-    image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    image : assets/img/dp.jpg
+    username : Akshay Praveen Nair
+    description : I am a BTech student in Amrita Vishwa Vidyapeetham. My course is core CSE. 
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 11-07-2019 
+        end : present
+        experience : <a href="https://amfoss.in/">amfoss-club</a>
     skills : 
-      - skill : HTML5 & CSS
-        value : 85  # Percent value
-        
+      - skill : HTML5
+        value : 75  # Percent value
+      - skill : django
+        value : 79
+      - skill : python
+        value : 80
+      - skill : c++
+        value : 40
+
   # Icons
   icons :
-    email:  # Full email address, e.g. "sample@google.com"
+    email:  akshaypraveennair11@gmail.com
     linkedin:  # Full URL 
-    github: naye0ng
-    gitlab: 
+    github: iammarco11
+    gitlab: iammarco11
     bitbucket: 
     google_plus:
-    twitter:
+    twitter: akshaay_11
     youtube:
-    facebook:
-    instagram:
+    facebook: 
+    instagram: akshaay.11
 
   # Disqus
   disqus_shortname :

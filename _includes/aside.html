@@ -1,7 +1,7 @@
 <!-- User Profile -->
 <div id="profile">
   {% assign profile = site.theme_settings.profile %}
-  <a href="{{ site.baseurl }}/portfolio">
+  <a href="{{ site.baseurl }}/">
     <div class="img-wrap">
       <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
     </div>
@@ -27,8 +27,8 @@
 </div>
 <!-- Project -->
 <div id="proj-wrap">
-  <a href="{{ site.url }}/portfolio#projects">
-    <p class="title">PROJECTS 🙋🏻 </p>
+  <a href="{{ site.url }}/">
+    <p class="title">PROJECTS</p>
     <hr class="proj-hr">
     {% for _ in site.data.projects %}
     {% assign project = _.project %}

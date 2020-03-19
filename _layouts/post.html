@@ -6,7 +6,7 @@ layout: page
     <h1 class="title">{{ page.title }}</h1>
     <p class="subtitle">{{ page.subtitle }}</p>
     <p class="meta">
-      {{ page.date | date: "%B %-d, %Y" }}
+      {{ page.date | date_to_rfc822 }}
     </p>
   </section>
   <section class="post-content">
@@ -26,9 +26,6 @@ layout: page
   </div>
 </div>
 {% endif %}
-
-<!-- Footer -->
-{% include footer.html %}
 
 <script>
   var lastScrollTop = 0;

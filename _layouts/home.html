@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 <div id="home">
   <!-- Responsive Header -->
@@ -73,7 +73,7 @@ layout: default
           </a>
           {% endif %}
           {% for page in (min..max) %}
-          <a href="{% if page == 1 %}/{% else %}/blog/page{{ page }}{% endif %}"
+          <a href="{% if page == 1 %}/blog{% else %}/blog/page{{ page }}{% endif %}"
             class="{% if page == paginator.page %}selected{% endif %}">
             <li class="btn-rounded">{{ page }}</li>
           </a>
