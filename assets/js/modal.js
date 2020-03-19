@@ -13,20 +13,20 @@ var dp = ''
 
 function on_hover(id){
        
-    document.getElementById(id).src = "/assets/img/dp1.jpg"
+    document.getElementById(id).src = "/assets/img/dp1.png"
      
 }
 
 function not_on_hover(id){
-    document.getElementById(id).src = "/assets/img/dp.jpg"
+    document.getElementById(id).src = "/assets/img/dp.png"
 }
 
 function hover_name(){
        
-    document.getElementById("user_name").innerHTML = "@iammarco11"
+    document.getElementById("user_name").innerHTML = "@iamkulbhushansingh"
      
 }
 
 function not_hover_name(){
-    document.getElementById("user_name").innerHTML = "Akshay Praveen Nair"
+    document.getElementById("user_name").innerHTML = "Kulbhushan Singh"
 }
