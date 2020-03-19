@@ -15,9 +15,9 @@ theme_settings :
     username : Kulbhushan Singh
     description : I am a BCA student in IITM Janakpuri.I am intrested in solving Algorithms. 
     experience :
-      - #start : 11-07-2019 
-        #end : present
-       # experience : <a href="https://amfoss.in/">amfoss-club</a>
+      - start : JUNE 2018 
+        end : present
+        experience : BCA
     skills : 
       - skill : HTML5
         value : 60  # Percent value
