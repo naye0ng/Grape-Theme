@@ -16,15 +16,19 @@ theme_settings :
     description : I am a BCA student in IITM Janakpuri.I am intrested in solving Algorithms. 
     experience :
       - start : JUNE 2018 
-        end : present
+        end : Present
         experience : BCA
     skills : 
-      - skill : HTML5
-        value : 60  # Percent value
-      - skill : python
+      - skill : HTML5 & CSS
+        value : 70 # Percent value
+      - skill : Python
         value : 60
-      - skill : c++
+      - skill : C++
         value : 80
+      - skill : Java
+        value : 70
+      - skill : MySql
+        value : 60
 
   # Icons
   icons :
