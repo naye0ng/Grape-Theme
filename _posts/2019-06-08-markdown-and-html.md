@@ -78,11 +78,19 @@ you can easy to change style in `_utility.html` and a sample of the formatting f
 <br>
 
 <h2>5. image</h2>
+Try using `.width-30`, `.width-40`, `.width-50`, `.width-60`, `.width-70` and `.width-80` class! You can easily change the image width.
+
 {% highlight html %}
 ![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg)
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-30}
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-50}
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-80}
 {% endhighlight %}
 ![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg)
-
+<p></p>
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-30}
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-50}
+![sample image]({{ site.baseurl }}/assets/img/koreaSunset.jpg){: .width-80}
 <br>
 
 <h2>5. table</h2>
