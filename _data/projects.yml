@@ -25,4 +25,14 @@
             <li>favicon.ico, search 기능</li>
             <li>OG Tag 추가</li>
             <li>profile 이미지 효과</li>
-            <li>gem 배포</li>
+            <li>gem 배포</li> 
+
+- project :
+    print : True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
+    modal : True # If 'True' is selected, modal can open in 'portfolio.html'. 
+    url :  # Full URL
+    image : # path: assets/project/
+    date : 2019.06.09 - Developing
+    title : Dummy project
+    summary : This is Dummy
+    description :  
