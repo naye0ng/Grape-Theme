@@ -2,7 +2,7 @@
 layout: post
 title: Sample Post with Markdown
 subtitle : How markdown is displayed as html
-tags: [HTML, Markdown]
+tags: [Sample Post, Demo]
 author: Nayeong Kim
 comments : True
 ---
