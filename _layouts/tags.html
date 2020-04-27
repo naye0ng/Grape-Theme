@@ -19,7 +19,7 @@ layout: page
     {% for tag in site.tags %}
     <div class="tag-group">
       {% capture group %}{{ tag | first }}{% endcapture %}
-      <h4 id="{{ group | cgi_escape }}" class="title">{{ group | cgi_escape }}</h4>
+      <h4 id="{{ group }}" class="title">{{ group }}</h4>
       <div class="items">
         {% for post in site.tags[group] %}
         <a href="{{ post.url | relative_url }}" class="post-link">
