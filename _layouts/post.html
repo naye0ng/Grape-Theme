@@ -19,7 +19,7 @@ layout: page
 </div>
 
 <!-- Disqus -->
-{% if site.theme_settings.disqus_shortname %}
+{% if site.theme_settings.disqus_shortname and page.comments %}
 <div id="comments">
   <div class="border">
     {% include disqus.html %}
