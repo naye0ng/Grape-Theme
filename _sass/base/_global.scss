@@ -13,7 +13,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, form, input, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -170,4 +170,40 @@ a:link, a:visited, a:active, a:hover {
 		}
 	}
 
+}
+.search {
+	border-radius: 20px;
+	border-style: none;
+	background-color: $theme-bright;
+	margin-bottom: 10px;
+	margin-right : 3px;
+	form {
+		display: flex;
+		flex: 1;
+	}
+	input {
+		display: inline-block;
+		flex-grow: 1;
+		font-size: 0.85rem;
+		line-height: 35px;
+		letter-spacing: -0.03rem;
+		padding: 1px 15px 0px;
+		background-color: rgba(0,0,0,0.0)!important;
+		outline: 0 none;
+		box-shadow: none;
+	}
+	button {
+		flex-grow: 0;
+		display: inline-block;
+		border: none;
+		width: 35px;
+		height: 35px;
+		margin-right: 0;
+		font-size: 0.85rem;
+		line-height: 35px;
+		color: rgba(0,0,0,0.54);
+		background-color: rgba(0,0,0,0.0);
+		cursor: pointer;
+		outline: 0 none;
+	}
 }

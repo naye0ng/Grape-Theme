@@ -40,6 +40,11 @@ theme_settings :
 paginate: 5
 paginate_path: "blog/page:num"
 
+# Search
+search:
+  placeholder: "Search"
+  nothing_found: "Nothing found"
+
 # Build Ssttings
 sass:
   sass_dir: _sass
