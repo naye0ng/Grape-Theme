@@ -21,6 +21,10 @@ theme_settings:
         end: 2020-11-30
         experience: 멋쟁이사자처럼 8기 운영진
 
+      - start: 2021-06-23
+        end: 2021-07-22
+        experience: 대학생 코딩캠프 코드잇!
+
     skills:
       - skill: HTML5 & CSS
         value: 85 # Percent value
