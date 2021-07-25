@@ -4,22 +4,29 @@ url: 'https://sangzun-han.github.io'
 
 # Blog Settings
 theme_settings:
-  title: hansajgnjun
+  title:
   favicon: assets/favicon.ico
 
   # Profile Settings
   profile:
     image: assets/img/profileimg.png
-    username: hansangjun
+    username: 한상준
     description:
     experience:
       - start: 2015-03-02
         end: 2021-00-00
         experience: Kyonggi University
+
+      - start: 2020-03-02
+        end: 2020-11-30
+        experience: 멋쟁이사자처럼 8기 운영진
+
     skills:
       - skill: HTML5 & CSS
         value: 85 # Percent value
       - skill: React & React-native
+        value: 50
+      - skill: django
         value: 50
 
   # Icons

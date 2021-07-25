@@ -36,3 +36,13 @@
 #     title: Dummy project
 #     summary: This is Dummy
 #     description:
+
+- project:
+  print: True
+  modal: True
+  url: https://github.com/sangzun-han/cyworldclone
+  image: cyworld_main.png
+  date: 2020.06.11
+  title: CYWORLD
+  summary: cyworld clone
+  description:
