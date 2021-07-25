@@ -38,11 +38,11 @@
 #     description:
 
 - project:
-  print: True
-  modal: True
-  url: https://github.com/sangzun-han/cyworldclone
-  image: cyworld.png
-  date: 2020.06.11
-  title: CYWORLD
-  summary: cyworld clone
-  description:
+    print: True
+    modal: True
+    url: https://github.com/sangzun-han/cyworldclone
+    image: cyworld.png
+    date: 2020.06.11 - 2020.08.10
+    title: CYWORLD
+    summary: cyworld clone
+    description: 싸이월드 클론
