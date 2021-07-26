@@ -46,3 +46,13 @@
     title: CYWORLD
     summary: cyworld clone
     description: 싸이월드 클론
+
+- project:
+    print: True
+    modal: True
+    url: https://github.com/sangzun-han/cyworldclone
+    # image:
+    date: 2021.03.12 - 2021.06.15
+    title: 인공지능 헬스 트레이너
+    summary: 인공지능 헬스 트레이너
+    description: 인공지능 헬스 트레이너
