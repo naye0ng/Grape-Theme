@@ -16,8 +16,12 @@ theme_settings :
     description : Hey there! Stalker,have a good day ;)
     experience :
       - start : JUNE 2018 
-        end : Present
+        end : AUGUST 2021
         experience : BCA
+      - start : OCTOBER 2021 
+        end : Present
+        experience : MCA
+
     skills : 
       - skill : HTML5 & CSS
         value : 70 # Percent value
@@ -25,7 +29,7 @@ theme_settings :
         value : 60
       - skill : C++
         value : 80
-      - skill : Java
+      - skill : Photoshop
         value : 70
       - skill : MySql
         value : 60
@@ -41,7 +45,7 @@ theme_settings :
     twitter: 
     youtube:
     facebook: 
-    instagram: im_rajput.py
+    instagram: mhrithik_
 
   # Disqus
   disqus_shortname :
